@@ -15,7 +15,7 @@ Make sure you know which key opens your console in squad. (You can adjust that i
 
 
 Download this project
-(Click  <Code> , then Download ZIP and extract that.)
+(Click  \<Code\> , then Download ZIP and extract that.)
 
 Run install.bat
 
