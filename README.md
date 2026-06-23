@@ -32,7 +32,7 @@ Wait & Enjoy.
 
 After you close the launched game, the original settings file will be reinstated.
 
-(You can manually add that to your steam library if you want, but make sure to afterwards go into the Properties of the desktop shortcut. From there, copy everything following cmd.exe into the Steam Launch Options of the newly created 'Steam Library Item'. You can find the icon in %userprofile%\SquadSeed which you also want to set as execution folder.)
+(You can manually add that the shortcut to your steam library if you want, but make sure to afterwards go into the Properties of the shortcut on the desktop. From there, copy everything following cmd.exe into the Steam Launch Options of the newly created 'Steam Library Item'. You can find the icon in %userprofile%\SquadSeed which you also want to set as execution folder.)
 
 
 ## Documentation
@@ -40,9 +40,8 @@ After you close the launched game, the original settings file will be reinstated
 - If the server address changes, you need to rerun the install.bat.
 
 
-- If the script is aborts, it usually leaves behind a backup called GameUserSettings.ini.bak of the original settings file.
-
-When the script is launched and detects such a remaining backup, it handles this carefully. Wait for Squad to launch. After quitting Squad and waiting for 10 seconds, the normal settings file should be restored.
+- If the script aborts, it usually leaves behind a backup called GameUserSettings.ini.bak of the original settings file.
+The next time the script is launched it detects this remaining backup and handles it carefully: Wait for Squad to launch. After quitting Squad and waiting for 10 seconds, the normal settings file should be restored.
 
 
 ## Lessons Learned
