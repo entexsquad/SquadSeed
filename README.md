@@ -50,6 +50,7 @@ Originally I wanted to read the ConsoleKey from the Input.ini but I gave up on t
 
 If you just want a helping hand with switching Setting Files, you can also code a minimal Batch file yourself: https://pastebin.com/YPe1LY6z
 
+According to reddit, it was once possible to directly join a server using steam launch options, I wasn't able to get that to work, neither -safe for low graphics worked out. (The only option that I successfully tested was -noaudio.) Let me know if you manage to get this simple solution to work.
 
 ## Alternative without powershell usage
 
