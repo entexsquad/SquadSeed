@@ -84,7 +84,16 @@ FileAppend(AppendLines, SettingsFile)
 
 ; Start game
 gameProc := Run(GameExePath)
-Sleep(29000)
+timeout := 42000
+startTime := A_TickCount
+while (A_TickCount - startTime < timeout) {
+    if (ProcessExist("SquadGame-Win64-Shipping.exe")) {
+    break
+    }
+    Sleep(69)
+}
+; should be decreased:
+Sleep(42000)
 
 ; Find window
 ; hwnd := WinExist(WindowClass, WindowTitle)

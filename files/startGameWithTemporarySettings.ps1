@@ -139,7 +139,16 @@ Add-Content -Path $SettingsFile -Value $AppendLines
 
 #gameProc is only the PID of the easyAntiCheat or whatever
 $gameProc = Start-Process -FilePath $GameExePath -PassThru -ErrorAction Stop
-Start-Sleep -Seconds 29
+Start-Sleep -Seconds 20
+$timeout = 40
+$sw = [Diagnostics.Stopwatch]::StartNew()
+while($sw.Elapsed.TotalSeconds -lt $timeout) {
+    Start-Sleep -Milliseconds 500
+    $hwnd = [Win32]::FindWindow($WindowClass,$WindowTitle)
+    if([Win32]::IsWindow($hwnd)){ break}
+    }
+#adding extra wait time because above also identifies launcher, may improve this sometime else.
+Start-Sleep -Seconds 42
 $hwnd = [Win32]::FindWindow($WindowClass,$WindowTitle)
 Post-Keys $hwnd 0x20
 
