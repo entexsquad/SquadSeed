@@ -41,9 +41,11 @@ After you close the launched game, the original settings file will be reinstated
 
 
 - If the script aborts, it usually leaves behind a backup called GameUserSettings.ini.bak of the original settings file.
-The next time the script is launched it detects this remaining backup and handles it carefully: Wait for Squad to launch. After quitting Squad and waiting for 10 seconds, the normal settings file should be restored.
+The next time the script is launched it detects this remaining backup and handles it carefully: Wait for Squad to launch. Wait for the script to enter the console command. After quitting Squad and waiting for 10 seconds, the normal settings file should be restored.
 
 
+- Should you not be able to restore the original settings file as explained above, there are backups of the settings file along the current GameUserSettings.ini inside the folder %localappdata%\SquadGame\Saved\Config\Windows - try replacing GameUserSettings.ini with copies of these.
+The file ending in initialbackup is created only once (aka when not present in the folder).
 ## Lessons Learned
 
 Originally I wanted to read the ConsoleKey from the Input.ini but I gave up on that, it didn't seem reliable to me.

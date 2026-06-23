@@ -119,7 +119,7 @@ Sleep(50)
 ControlSend("{Backspace}",hwnd)
 Sleep(50)
 ControlSend("open ",hwnd)
-Sleep(20)
+Sleep(100)
 ControlSendText(IP, hwnd)
 ; old version:
 if !true{
