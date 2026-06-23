@@ -1,6 +1,6 @@
 
 # SquadSeed
-Let's you easily create a shortcut on your desktop which allows you to seed a squad server.
+Let's you easily create a shortcut on your desktop which allows you to automatically join a squad server with low graphics settings.
 Includes a customizable powershellscript to launch games with a temporary .ini.
 
 For alternatives see the bottom of the page.
