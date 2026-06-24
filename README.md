@@ -1,5 +1,6 @@
 
 # SquadSeed
+Rn I can't really recommend the use, if you need sth. like this, maybe just create a Batch file yourself like this: https://pastebin.com/YPe1LY6z also don't use this oder such a file directly after closing Squad! Wait at least 10 sec.
 Let's you easily create a shortcut on your desktop which allows you to automatically join a squad server with low graphics settings.
 Includes a customizable powershellscript to launch games with a temporary .ini.
 
